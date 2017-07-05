@@ -952,8 +952,43 @@ color:#b3b2b2;
       width: 21rem !important;
 }
 
+.featured__product 
+.featured__product__item 
+.featured__product__inner span {
+    opacity: 0;
+    height: 200;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    z-index: 1;
+    transition: all .3s;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 0 0 0;
+}
 
+.follow__socmed
+.follow__socmed__a {
+    font-size: 22px;
+    margin: 0 0 0 5px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+}
 
+.hr{
+  border-bottom: solid 1px #000;
+}
+
+.produk{
+  color:#3a4b60;
+}
 /*========================================================================
               [ END ]
 =========================================================================*/
