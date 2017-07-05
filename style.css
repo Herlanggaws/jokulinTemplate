@@ -506,12 +506,12 @@ li.searchbox.searchbox-open {padding-top: 0;}
 .review_area {border-bottom: 1px solid #E5E5E5;}
 .carousel-indicators {bottom: -50px;}
 .carousel-indicators li {
-  border: 1px solid #3A4B60;
+  border: 1px solid #fff;
   width:20px;
   height:10px;
 }
 .carousel-indicators .active {
-  background: rgb(58, 75, 96) none repeat scroll 0 0;
+  background: 1px solid #ffffff none repeat scroll 0 0;
   height: 10px;
   width: 20px;
   margin: 1px;
