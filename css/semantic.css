@@ -2227,6 +2227,170 @@ input::selection {
   color: #FFFFFF !important;
 }
 
+/*-- biru tua --*/
+.ui.btua.buttons .button,
+.ui.btua.button {
+  background-color: #1B1C1D;
+  color: #FFFFFF;
+  text-shadow: none;
+  background-image: none;
+}
+
+.ui.btua.button {
+  box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+}
+
+.ui.btua.buttons .button:hover,
+.ui.btua.button:hover {
+  background-color: #27292a;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+
+.ui.btua.buttons .button:focus,
+.ui.btua.button:focus {
+  background-color: #2f3032;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+
+.ui.btua.buttons .button:active,
+.ui.btua.button:active {
+  background-color: #343637;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+
+.ui.btua.buttons .active.button,
+.ui.btua.buttons .active.button:active,
+.ui.btua.active.button,
+.ui.btua.button .active.button:active {
+  background-color: #0f0f10;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+
+/* Basic */
+
+.ui.basic.btua.buttons .button,
+.ui.basic.btua.button {
+  box-shadow: 0px 0px 0px 1px #1B1C1D inset !important;
+  color: #1B1C1D !important;
+}
+
+.ui.basic.btua.buttons .button:hover,
+.ui.basic.btua.button:hover {
+  background: transparent !important;
+  box-shadow: 0px 0px 0px 1px #27292a inset !important;
+  color: #27292a !important;
+}
+
+.ui.basic.btua.buttons .button:focus,
+.ui.basic.btua.button:focus {
+  background: transparent !important;
+  box-shadow: 0px 0px 0px 1px #2f3032 inset !important;
+  color: #27292a !important;
+}
+
+.ui.basic.btua.buttons .active.button,
+.ui.basic.btua.active.button {
+  background: transparent !important;
+  box-shadow: 0px 0px 0px 1px #0f0f10 inset !important;
+  color: #343637 !important;
+}
+
+.ui.basic.btua.buttons .button:active,
+.ui.basic.btua.button:active {
+  box-shadow: 0px 0px 0px 1px #343637 inset !important;
+  color: #343637 !important;
+}
+
+.ui.buttons:not(.vertical) > .basic.btua.button:not(:first-child) {
+  margin-left: -1px;
+}
+
+/* Inverted */
+
+.ui.inverted.btua.buttons .button,
+.ui.inverted.btua.button {
+  background-color: transparent;
+  box-shadow: 0px 0px 0px 2px #D4D4D5 inset !important;
+  color: #FFFFFF;
+}
+
+.ui.inverted.btua.buttons .button:hover,
+.ui.inverted.btua.button:hover,
+.ui.inverted.btua.buttons .button:focus,
+.ui.inverted.btua.button:focus,
+.ui.inverted.btua.buttons .button.active,
+.ui.inverted.btua.button.active,
+.ui.inverted.btua.buttons .button:active,
+.ui.inverted.btua.button:active {
+  box-shadow: none !important;
+  color: #FFFFFF;
+}
+
+.ui.inverted.btua.buttons .button:hover,
+.ui.inverted.btua.button:hover {
+  background-color: #394a5f;
+}
+
+.ui.inverted.btua.buttons .button:focus,
+.ui.inverted.btua.button:focus {
+  background-color: #394a5f;
+}
+
+.ui.inverted.btua.buttons .active.button,
+.ui.inverted.btua.active.button {
+  background-color: #394a5f;
+}
+
+.ui.inverted.btua.buttons .button:active,
+.ui.inverted.btua.button:active {
+  background-color: #394a5f;
+}
+
+/* Inverted Basic */
+
+.ui.inverted.btua.basic.buttons .button,
+.ui.inverted.btua.buttons .basic.button,
+.ui.inverted.btua.basic.button {
+  background-color: transparent;
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
+  color: #FFFFFF !important;
+}
+
+.ui.inverted.btua.basic.buttons .button:hover,
+.ui.inverted.btua.buttons .basic.button:hover,
+.ui.inverted.btua.basic.button:hover {
+  box-shadow: 0px 0px 0px 2px #394a5f inset !important;
+  color: #FFFFFF !important;
+}
+
+.ui.inverted.btua.basic.buttons .button:focus,
+.ui.inverted.btua.basic.buttons .button:focus,
+.ui.inverted.btua.basic.button:focus {
+  box-shadow: 0px 0px 0px 2px #394a5f inset !important;
+  color: #545454 !important;
+}
+
+.ui.inverted.btua.basic.buttons .active.button,
+.ui.inverted.btua.buttons .basic.active.button,
+.ui.inverted.btua.basic.active.button {
+  box-shadow: 0px 0px 0px 2px #394a5f inset !important;
+  color: #FFFFFF !important;
+}
+
+.ui.inverted.btua.basic.buttons .button:active,
+.ui.inverted.btua.buttons .basic.button:active,
+.ui.inverted.btua.basic.button:active {
+  box-shadow: 0px 0px 0px 2px #394a5f inset !important;
+  color: #FFFFFF !important;
+}
+
+/*-- biru tua --*/
+
+
 /*--- Grey ---*/
 
 .ui.grey.buttons .button,
@@ -25281,7 +25445,7 @@ Floated Menu / Item
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 0.875em 1.9em;
+  margin: 1.9em 1.9em;
   float: none;
 }
 
