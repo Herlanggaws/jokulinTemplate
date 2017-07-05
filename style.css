@@ -989,6 +989,19 @@ color:#b3b2b2;
 .produk{
   color:#3a4b60;
 }
+
+.putih {
+   
+ color: #47576a !important;
+}
+
+.putih:hover{
+  color: #fff !important;
+}
+
+.teksputih input {
+  color: #fff !important;
+}
 /*========================================================================
               [ END ]
 =========================================================================*/
