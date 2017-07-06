@@ -1002,6 +1002,14 @@ color:#b3b2b2;
 .teksputih input {
   color: #ffffff !important;
 }
+
+.lancip {
+  border-radius: 0px !important;
+}
+
+.text-kiri{
+  text-align: left;
+}
 /*========================================================================
               [ END ]
 =========================================================================*/
