@@ -180,7 +180,9 @@
 									<td><i class="fa fa-trash"></i></td>
 								</tr>
 								<tr id="total_colspan">
-									<td colspan="3" class="text-left">total</td>
+
+									<td colspan="2"><a class="checkPageBtn" href="#" style="background:rgb(138, 145, 154)">Continue Shopping</a></td>
+									<td class="text-left">TOTAL</td>
 									<td>
 										2
 									</td>
@@ -188,7 +190,40 @@
 										190.98$
 									</td>
 									<td colspan="2">
-										<a class="checkPageBtn" href="#">add to wishlist</a>
+										<button data-toggle="modal" data-target="#myModal" class="checkPageBtn">CHECKOUT</button>
+										<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+										  <div class="modal-dialog" role="document">
+										    <div class="modal-content lancip">
+										      <div class="modal-header">
+										        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										        <h4 class="modal-title" id="myModalLabel">Checkout Item</h4>
+										      </div>
+										      <div class="modal-body">
+										         <form>
+										         <div class="row">
+												  <div class="form-group text-kiri col-md-5">
+												    <label for="exampleInputEmail1">Name</label>
+												    <input type="email" class="form-control lancip" placeholder="Custumer">
+												  </div>
+												  </div>
+												 <div class="row">
+												  <div class="form-group text-kiri col-md-5">
+												    <label for="exampleInputPassword1">Shipping</label>
+												    <select name="shipping" class="form-control lancip">
+												    	<option>Select address</option>
+														<option type="button" data-toggle="modal" data-target="#myModal">Create New Address</option>    	
+												    </select>
+												  </div>
+												 </div> 
+												 </form>
+										      </div>
+										      <div class="modal-footer">
+										        <button type="button" class="checkPageBtn" data-dismiss="modal">Close</button>
+										        <button type="button" class="checkPageBtn">Checkout</button>
+										      </div>
+										    </div>
+										  </div>
+										</div>
 									</td>
 								</tr>
 							</tbody>
@@ -299,6 +334,51 @@
 			</div>
 		</div>
 	</footer>
+	
+	<!-- start modal checkout -->
+			<div class="ui modal modal2 ">
+				  <i class="close icon"></i>
+				  <div class="header">
+				    Detail Buku
+				  </div>
+				  <div class="image content">
+				    <div class="ui medium image">
+				      <img src="../img/buku1.jpg">
+				    </div>
+					    <div class="description" style="font-size: 21px;width: 69%;">
+						      <div class="ui top secondary attached segment" style="font-size: 21px;">
+						      	  <i class="font icon"></i>
+								  Judul Buku : Tukang Copas
+							  </div>
+							  <div class="ui secondary attached segment" style="font-size: 21px;">
+							  	  <i class="stack overflow icon"></i>
+								  ISBN : 12345678
+							  </div>
+							  <div class="ui secondary attached segment" style="font-size: 21px;">
+							  	  <i class="book icon"></i>
+								  Penerbit : Tatang Sumarsono
+							  </div>
+							  <div class="ui bottom attached warning message">
+									  <i class="server icon"></i>
+									  Rak Ke : 4
+							  </div>
+					    </div>
+				  </div>
+				  <div class="actions">
+				    <div class="ui positive right labeled icon button">
+				      Tutup
+				      <i class="remove icon"></i>
+				    </div>
+				  </div>
+			</div><!-- end modal checkout-->
+
+	<script>
+		 $(document).ready(function() {
+				$('.ui.modal.modal2')
+				  .modal('attach events', '.detail', 'show');  
+		 });
+	</script>
+
 	<!-- Footer-Section-End -->
 	<!-- All js Files Here -->
 	<!-- jquery-1.11.3 -->
