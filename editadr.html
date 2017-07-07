@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Transfer || Elixir Fashion</title>
+	<title>Detail Product || Elixir Fashion</title>
 	<meta name="author" content="">
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -26,11 +26,26 @@
     <link rel="stylesheet" href="css/responsive.css"/>
 	<!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.png" />
+
+    
+     <script type="text/javascript" src="/themes/modern/js/26/tether.min.js?1496732753"></script>
+    
+     <script type="text/javascript" src="/themes/modern/js/27/bootstrap.min.js?1496732753"></script>
+    
+     <script type="text/javascript" src="/themes/modern/js/28/swiper.min.js?1496732753"></script>
+    
+     <script type="text/javascript" src="/themes/modern/js/29/masonry.pkgd.js?1496732753"></script>
+    
+     <script type="text/javascript" src="/themes/modern/js/30/easyzoom.js?1496732753"></script>
+    
+     <script type="text/javascript" src="/themes/modern/js/31/jquery.elevatezoom.js?1496732767"></script>
+    
+     <script type="text/javascript" src="/themes/modern/js/32/script.js?1496732767"></script>
     
 </head>
 <body>
     	<!-- Header-Section-Strat  -->
-	<header>F
+	<header>
 		<div class="container">
 			<div class="header_top">
 				<div class="row">
@@ -115,103 +130,67 @@
 		</div>
 	</div>
 	<!-- mobile-menu-area end -->
-<div class="container">
-<div class="col col-md-12 col-sm-12">
-					<!--alert-->
-				<div class="container">
-					<div class="alert alert-dismissable alert-success" contenteditable="true">
-      					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-							<h4 class="orders">ORDER SUCCESS</h4>
-					</div>
-				</div>	
-					<!--end alert-->
+	<br>
 
-				<br>
-				<form enctype="multipart/form-data" action="/payments/461/payment_save" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="yVM8X2J5EK0RIWUkLLf6+wIsYvvcMqcebwLmjSLiml+CXZnZaftXtIjqhq9bos1tlegc4pqz8Sdw+fWKC9GoDw==">
-					<div class="form-group row">
-						<label class="control-label col-md-4 col-sm-2">No Invoice :</label>
-						<div class="col-md-8 col-sm-10">
-							<span style="color:#171d20;" >67201747461</span>
-						</div>
-					</div>
-					<div class="form-group row">
-						<label class="control-label col-md-4 col-sm-2">Total Payment :</label>
-						<div class="col-md-8 col-sm-10">
-							<span style="color:#171d20;">Rp.  150.000</span>
-						</div>
-					</div>
-					<div class="form-group row">
-						<label class="control-label col-md-4 col-sm-2">Your Bank Name:</label>
-						<div class="col-md-8 col-sm-10">
-							<input class="form-control" placeholder="Example : BCA, BNI, Mandiri" type="text" name="merchant_payment[your_bank_name]" id="merchant_payment_your_bank_name">
-						</div>
-					</div>
-					<div class="form-group row">
-						<label class="control-label col-md-4 col-sm-2">Your Bank Account Name:</label>
-						<div class="col-md-8 col-sm-10"> 
-							<input class="form-control" placeholder="Your Name" type="text" name="merchant_payment[your_bank_account_name]" id="merchant_payment_your_bank_account_name">
-						</div>
-					</div>
-					<div class="form-group row">
-						<label class="control-label col-md-4 col-sm-2">Destination Bank:</label>
-						<div class="col-md-8 col-sm-10"> 
-						    <select class="form-control" name="merchant_payment[merchant_bank_id]" id="merchant_payment_merchant_bank_id">
-						      <option value="">Select Bank</option>
-                              
-                              <option value="3">BCA</option>
-                              
-                            </select>
-						</div>
-					</div>
-					<div class="form-group row">
-						<label class="control-label col-md-4 col-sm-2">Total Payment:</label>
-						<div class="col-md-8 col-sm-10">
-							<input class="form-control numericOnly" maxlength="9" size="9" type="tel" name="merchant_payment[total]" id="merchant_payment_total">
-						</div>
-					</div>
-					<div class="form-group row">
-						<label class="control-label col-md-4 col-sm-2">Phone Number:</label>
-						<div class="col-md-8 col-sm-10">
-							<input class="form-control numericOnly" type="tel" name="merchant_payment[phone_number]" id="merchant_payment_phone_number">
-						</div>
-					</div>
-					<div class="form-group row">
-						<label class="control-label col-md-4 col-sm-2">Transfer Date:</label>
-						<div class="col-md-8 col-sm-10">
-							<input class="form-control datepicker hasDatepicker" type="text" name="merchant_payment[transfer_date]" id="merchant_payment_transfer_date">
-						</div>
-					</div>
-					<div class="form-group row">
-						<label class="control-label col-md-4 col-sm-2">Transfer Time:</label>
-						<div class="col-md-8 col-sm-10">
-							<input class="form-control timepicker ui-timepicker-input" type="text" name="merchant_payment[transfer_time]" id="merchant_payment_transfer_time" autocomplete="off">
-						</div>
-					</div>
-					<div class="form-group row">
-						<label class="control-label col-md-4 col-sm-2">Attach File:</label>
-						<div class="col-md-8 col-sm-10"> 
-							<div class="input__file__wrap d-inline-block">
-								<input class="input__file__upload" id="input-file" type="file" name="merchant_payment[bukti_transfer]">
-                                <label for="input-file" class="btn btn-success">Select File</label>
-								<small class="input-text inline"></small>
-							</div>
-						</div>
-					</div>
-					<div class="form-group row">
-						<label class="control-label col-md-4 col-sm-2">Notes:</label>
-						<div class="col-md-8 col-sm-10">
-							<textarea class="form-control" name="merchant_payment[note]" id="merchant_payment_note"></textarea>
-						</div>
-					</div>
-					<hr>
-					<div class="form-group row"> 
-						<div class="col-sm-12 text-center">
-							<button type="submit" class="btn" style="background-color:#171d20;">Confirm</button>
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>
+				<div class="container">
+					<div class="row">
+					  <div class="col-sm-3">
+					    <div class="sidebar-nav">
+					      <div class="navbar navbar-default lancip" role="navigation">
+					        <div class="navbar-header">
+					          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+					            <span class="sr-only">Toggle navigation</span>
+					            <span class="icon-bar"></span>
+					            <span class="icon-bar"></span>
+					            <span class="icon-bar"></span>
+					          </button>
+					          <span class="visible-xs navbar-brand">Sidebar menu</span>
+					        </div>
+					        <div class="navbar-collapse collapse sidebar-navbar-collapse">
+					          <ul class="nav navbar-nav">
+					            <li class="active"><a href="#">My Account</a></li>
+					            <li><a href="#">Order History</a></li>
+					            <li><a href="#">Saved Address</a></li>
+					            <li><a href="#">Logout</a></li>
+					          </ul>
+					        </div><!--/.nav-collapse -->
+					      </div>
+					    </div>
+					  </div>
+		<div class="col col-12 col-md-8 col-sm-12">
+		   <div class="view">
+    <form role="form">
+      <div class="form-group">
+        <label for="">Saved Address</label>
+        <input type="text" class="form-control">
+      </div>
+      </div>
+      <<div class="form-group">
+        <label for="">Address Name</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="">Lorem</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="">Lorem</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="">Lorem</label>
+        <input type="text" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<br>
+
 <!-- Footer-Section-Start -->
 	<footer>
 		<div class="footer_top footer-padding">
