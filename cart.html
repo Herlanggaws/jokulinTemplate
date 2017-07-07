@@ -199,26 +199,69 @@
 										        <h4 class="modal-title" id="myModalLabel">Checkout Item</h4>
 										      </div>
 										      <div class="modal-body">
-										         <form>
-										         <div class="row">
-												  <div class="form-group text-kiri col-md-5">
-												    <label for="exampleInputEmail1">Name</label>
-												    <input type="email" class="form-control lancip" placeholder="Custumer">
+										      	<div class="row">
+										      	   <div class="col-md-5">	
+											         <form>
+											         <div class="row">
+													  <div class="form-group text-kiri col-md-12">
+													    <label for="exampleInputEmail1">Name</label>
+													    <input type="email" class="form-control lancip" placeholder="Custumer">
+													  </div>
+													  </div>
+													 <div class="row">
+													  <div class="form-group text-kiri col-md-12">
+													    <label for="exampleInputPassword1">Shipping</label>
+													    <select name="shipping" class="form-control lancip">
+													    	<option>Select address</option>
+															<option type="button" data-toggle="modal" data-target="#myModal">Create New Address</option>    	
+													    </select>
+													  </div>
+													 </div> 
+													 </form>
 												  </div>
-												  </div>
-												 <div class="row">
-												  <div class="form-group text-kiri col-md-5">
-												    <label for="exampleInputPassword1">Shipping</label>
-												    <select name="shipping" class="form-control lancip">
-												    	<option>Select address</option>
-														<option type="button" data-toggle="modal" data-target="#myModal">Create New Address</option>    	
-												    </select>
-												  </div>
-												 </div> 
-												 </form>
+												  <div class="col-md-6">
+												  <br>
+												  	<p style="text-align:left;">
+												  		riskids <br>cimahi jalan jumbojet <br>	
+												  		telephone : 0239323121	
+												  	</p>
+												  </div> 
+												</div>
 										      </div>
 										      <div class="modal-footer">
-										        <button type="button" class="checkPageBtn" data-dismiss="modal">Close</button>
+										       <div class="row">
+										      	   <div class="col-md-5">	
+											         <form>
+											         <div class="row">
+													  <div class="form-group text-kiri col-md-12">
+													    <label for="exampleInputEmail1">Shipping Method</label>
+													    <select name="shipping" class="form-control lancip">
+													    	<option>Select Shipping Method</option>
+															<option type="button" data-toggle="modal" data-target="#myModal">JNE</option>    	
+													    </select>
+													  </div>
+													  </div>
+													 <div class="row">
+													  <div class="form-group text-kiri col-md-12">
+													    <label for="exampleInputPassword1">Shipping Type</label>
+													    <select name="shipping" class="form-control lancip">
+													    	<option>Select Shipping Type</option>
+															<option type="button" data-toggle="modal" data-target="#myModal">YES</option>    	
+													    </select>
+													  </div>
+													 </div> 
+													 </form>
+												  </div>
+												  <div class="col-md-6">
+												  <br>
+												  	<span style="font-size:20px">	Order Total :    $999</span><br><br>		
+												  	<span style="font-size:20px">	Shipping Charge :    $999</span><br><hr>		
+												  	<span style="font-size:20px"> 	Sub Total :    $999</span>
+												  </div> 
+												</div>
+										      </div>
+										      <div class="modal-footer">
+										        <button style="background:rgb(138, 145, 154)" type="button" class="checkPageBtn" data-dismiss="modal">Close</button>
 										        <button type="button" class="checkPageBtn">Checkout</button>
 										      </div>
 										    </div>
