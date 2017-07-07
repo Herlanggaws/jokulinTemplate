@@ -640,12 +640,12 @@ table, th, td {
 }
 th{
   text-align:center;
-  padding: 20px;
+  padding: 10px;
 }
 table tr td {
   color: rgb(37, 51, 69);
-  font-size: 18px;
-  padding: 20px;
+  font-size: 15px;
+  padding: 10px;
   font-family:nexa_bookregular;
   font-weight:400;
 }
@@ -863,7 +863,7 @@ button.checkPageBtn:hover,a.checkPageBtn:hover{background: #202B30;}
   font-size: 25px;
 }
 #cart_th th,.cart-table tbody tr td {
-  font-family: roboto;
+  font-family: nexa_bookregular;
   font-size: 14px;
 }
 #qua_in input,#qua_in_2 input {
@@ -1022,6 +1022,29 @@ color:#b3b2b2;
 .orders{
   text-align: center;
 }
+
+.sidebar__inner .sidebar__item a {
+    display: block;
+    padding: 10px;
+    background: #ebebeb;
+    border: 1px solid transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.sidebar__inner .sidebar__item.active__tab a {
+    background: #171d20;
+    color: #ebebeb;
+  }
+
+.text-center{
+  padding:5px;
+  font-size:15px;
+}
+
+
 /*========================================================================
               [ END ]
 =========================================================================*/
