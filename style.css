@@ -931,7 +931,11 @@ color:#b3b2b2;
 }
 
 .product {
-    margin: 0px 0px 20px 11px
+    margin: 0px 0px 20px 20px;
+}
+
+.product-p{
+  margin-left: 0px;
 }
 
 .grid-p{
@@ -1044,6 +1048,16 @@ color:#b3b2b2;
   font-size:15px;
 }
 
+/*responsive bro */
+
+@media (min-width: 768px) {
+  .product {
+    margin: 0px 0px 20px 105px;   
+}
+  .product-p{
+    margin-left: 53px;
+}
+}
 
 /* make sidebar nav vertical */ 
 @media (min-width: 768px) {
