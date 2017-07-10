@@ -1079,6 +1079,19 @@ color:#b3b2b2;
   }
 }
 
+.bebas{
+  z-index: 999;
+}
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 40px;
+  width: auto;
+  max-width: 200px;
+  margin: 20px auto;
+  text-align: center;
+}
 
 /*========================================================================
               [ END ]
