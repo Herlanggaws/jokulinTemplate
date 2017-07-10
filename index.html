@@ -54,7 +54,51 @@
 							<ul>
 								<li><a href="#">Account</a></li>
 								<li><a href="#">Wishlist</a></li>
-								<li><a href="#">Register / Login</a></li>
+								<li><a data-toggle="modal" data-target="#myModal" href=" ">Register / Login</a></li>
+										<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="bebas">
+										  <div class="modal-dialog" role="document">
+										    <div class="modal-content lancip">
+										      <div class="modal-header">
+										        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										        <h4 class="modal-title" id="myModalLabel" style="color:#171d20; margin-right:30%;">Register Account</h4>
+										      </div>
+										      <div class="modal-body">
+										      	<div class="row">
+										      	   <div class="col-md-12">	
+											         <form>
+											         <div class="row">
+													  <div class="form-group text-kiri col-md-12">
+													    <label for="exampleInputEmail1">Name</label>
+													    <input type="text" class="form-control lancip" placeholder="First Name">
+													  </div>
+													  </div>
+													 <div class="row">
+													  <div class="form-group text-kiri col-md-12">
+													    <label for="exampleInputEmail1">Name</label>
+													    <input type="text" class="form-control lancip" placeholder="Last Name">
+													  </div>
+													 </div> 
+													  <div class="row">
+													  <div class="form-group text-kiri col-md-12">
+													    <label for="exampleInputEmail1">Email</label>
+													    <input type="Email" class="form-control lancip" >
+													  </div>
+													 </div> 
+													  <div class="row">
+													  <div class="form-group text-kiri col-md-12">
+													    <label for="exampleInputEmail1">Password</label>
+													    <input type="password" class="form-control lancip" >
+													  </div>
+													 </div>
+													 <a href="payment.html"> <button type="button" class="btn" style="background-color:#171d20; color:#fff;">Register</button></a>
+													 <p class="pull-left">Already have an account? <a href="#second-popup" class="second-popup-link">Login</p></a>
+													 </form>
+												  </div>
+												</div>
+										      </div>
+										     </div>
+										    </div>
+										   </div>
 								<li class="searchbox">
 									<input type="search" placeholder="Search......" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
 									<input type="submit" class="searchbox-submit" value="">
@@ -66,6 +110,41 @@
 				</div>
 			</div>
 		</div>
+						<div id="second-popup">
+								<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+										  <div class="modal-dialog" role="document">
+										    <div class="modal-content lancip">
+										      <div class="modal-header">
+										        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										        <h4 class="modal-title" id="myModalLabel">Checkout Item</h4>
+										      </div>
+										      <div class="modal-body">
+										      	<div class="row">
+										      	   <div class="col-md-5">	
+											         <form>
+											         <div class="row">
+													  <div class="form-group text-kiri col-md-12">
+													    <label for="exampleInputEmail1">Name</label>
+													    <input type="email" class="form-control lancip" placeholder="Custumer">
+													  </div>
+													  </div>
+													 <div class="row">
+													  <div class="form-group text-kiri col-md-12">
+													    <label for="exampleInputPassword1">Shipping</label>
+													    <select name="shipping" class="form-control lancip">
+													    	<option>Select address</option>
+															<option type="button" data-toggle="modal" data-target="#myModal">Create New Address</option>    	
+													    </select>
+													  </div>
+													 </div> 
+													 </form>
+												  </div>
+												 </div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 			<div class="container">
 				<div class="row mega_relative">
 					<div class="col-xs-12 col-sm-2">
@@ -656,6 +735,12 @@
 	</footer>
 	<!-- Footer-Section-End -->
 	<!-- All js Files Here -->
+	<script>
+		 $(document).ready(function() {
+				$('.ui.modal.modal2')
+				  .modal('attach events', '.detail', 'show');  
+		 });
+	</script>
 	<!-- jquery-1.11.3 -->
     <script src="js/jquery-1.11.3.min.js"></script>
 	<!-- bootstrap js -->
