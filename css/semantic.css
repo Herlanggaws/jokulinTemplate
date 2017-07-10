@@ -23214,8 +23214,17 @@ Floated Menu / Item
 }
 
 .ui.vertical.menu {
-  width: 15rem;
+    width: 257px !important;
+    margin: 20px 0px 20px 19px;
 }
+
+@media (min-width: 768px) {
+  .ui.vertical.menu {
+    width: 212px !important;
+    margin: 0px 0px 20px 19px;
+}
+}
+
 
 /* Large */
 
