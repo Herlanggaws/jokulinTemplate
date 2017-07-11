@@ -1057,6 +1057,14 @@ color:#b3b2b2;
   .product-p{
     margin-left: 53px;
 }
+  .navbar{
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    border: 1px solid transparent;
+  }
+  
 }
 
 /* make sidebar nav vertical */ 
