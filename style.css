@@ -1091,6 +1091,54 @@ color:#b3b2b2;
   z-index: 999;
 }
 
+.custom-file-upload-hidden {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    left: -9999px;
+}
+.custom-file-upload {
+    display: block;
+    width: auto;
+    font-size: 16px;
+    //border: 1px solid #ccc;
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
+.file-upload-wrapper {
+    position: relative; 
+    margin-bottom: 5px;
+    //border: 1px solid #ccc;
+}
+.file-upload-input {
+    width: $file-upload-size;
+    color: #171d20;
+    font-size: 16px;
+    padding: 11px 17px; 
+    border: 1px solid #ccc;
+    margin-left: 2px
+}
+.file-upload-button {
+    cursor: pointer; 
+    display: inline-block; 
+    color: #;
+    font-size: 13px;
+    background-color: #171d20;
+    text-transform: uppercase;
+    padding: 11px 20px; 
+    border: none;
+    margin-left: -1px;  
+    background-color: darken($file-upload-color, 10); 
+    float: left; /* IE 9 Fix */
+    @include transition(all 0.2s ease-in);
+    &:hover {
+        background-color: darken($file-upload-color, 20);
+    }
+}
+
 /*========================================================================
               [ END ]
 =========================================================================*/
