@@ -143,19 +143,19 @@
 					<div class="form-group row">
 						<label class="control-label col-md-4 col-sm-2">Your Bank Name:</label>
 						<div class="col-md-8 col-sm-10">
-							<input class="form-control" placeholder="Example : BCA, BNI, Mandiri" type="text" name="merchant_payment[your_bank_name]" id="merchant_payment_your_bank_name">
+							<input class="form-control lancip" placeholder="Example : BCA, BNI, Mandiri" type="text" name="merchant_payment[your_bank_name]" id="merchant_payment_your_bank_name">
 						</div>
 					</div>
 					<div class="form-group row">
 						<label class="control-label col-md-4 col-sm-2">Your Bank Account Name:</label>
 						<div class="col-md-8 col-sm-10"> 
-							<input class="form-control" placeholder="Your Name" type="text" name="merchant_payment[your_bank_account_name]" id="merchant_payment_your_bank_account_name">
+							<input class="form-control lancip" placeholder="Your Name" type="text" name="merchant_payment[your_bank_account_name]" id="merchant_payment_your_bank_account_name">
 						</div>
 					</div>
 					<div class="form-group row">
 						<label class="control-label col-md-4 col-sm-2">Destination Bank:</label>
 						<div class="col-md-8 col-sm-10"> 
-						    <select class="form-control" name="merchant_payment[merchant_bank_id]" id="merchant_payment_merchant_bank_id">
+						    <select class="form-control lancip" name="merchant_payment[merchant_bank_id]" id="merchant_payment_merchant_bank_id">
 						      <option value="">Select Bank</option>
                               
                               <option value="3">BCA</option>
@@ -166,47 +166,46 @@
 					<div class="form-group row">
 						<label class="control-label col-md-4 col-sm-2">Total Payment:</label>
 						<div class="col-md-8 col-sm-10">
-							<input class="form-control numericOnly" maxlength="9" size="9" type="tel" name="merchant_payment[total]" id="merchant_payment_total">
+							<input class="form-control numericOnly lancip" maxlength="9" size="9" type="tel" name="merchant_payment[total]" id="merchant_payment_total">
 						</div>
 					</div>
 					<div class="form-group row">
 						<label class="control-label col-md-4 col-sm-2">Phone Number:</label>
 						<div class="col-md-8 col-sm-10">
-							<input class="form-control numericOnly" type="tel" name="merchant_payment[phone_number]" id="merchant_payment_phone_number">
+							<input class="form-control numericOnly lancip" type="tel" name="merchant_payment[phone_number]" id="merchant_payment_phone_number">
 						</div>
 					</div>
 					<div class="form-group row">
 						<label class="control-label col-md-4 col-sm-2">Transfer Date:</label>
 						<div class="col-md-8 col-sm-10">
-							<input class="form-control datepicker hasDatepicker" type="text" name="merchant_payment[transfer_date]" id="merchant_payment_transfer_date">
+							<input class="form-control datepicker hasDatepicker lancip" type="text" name="merchant_payment[transfer_date]" id="merchant_payment_transfer_date">
 						</div>
 					</div>
 					<div class="form-group row">
 						<label class="control-label col-md-4 col-sm-2">Transfer Time:</label>
 						<div class="col-md-8 col-sm-10">
-							<input class="form-control timepicker ui-timepicker-input" type="text" name="merchant_payment[transfer_time]" id="merchant_payment_transfer_time" autocomplete="off">
+							<input class="form-control timepicker ui-timepicker-input lancip" type="text" name="merchant_payment[transfer_time]" id="merchant_payment_transfer_time" autocomplete="off">
 						</div>
 					</div>
 					<div class="form-group row">
 						<label class="control-label col-md-4 col-sm-2">Attach File:</label>
 						<div class="col-md-8 col-sm-10"> 
-							<div class="input__file__wrap d-inline-block">
-								<input class="input__file__upload" id="input-file" type="file" name="merchant_payment[bukti_transfer]">
-                                <label for="input-file" class="btn btn-success">Select File</label>
-								<small class="input-text inline"></small>
+							<div class="custom-file-upload">
+    							<!--<label for="file">File: </label>--> 
+    							<input type="file" id="file" name="myfiles[]" multiple />
 							</div>
 						</div>
 					</div>
 					<div class="form-group row">
 						<label class="control-label col-md-4 col-sm-2">Notes:</label>
 						<div class="col-md-8 col-sm-10">
-							<textarea class="form-control" name="merchant_payment[note]" id="merchant_payment_note"></textarea>
+							<textarea class="form-control lancip" name="merchant_payment[note] lancip" id="merchant_payment_note"></textarea>
 						</div>
 					</div>
 					<hr>
 					<div class="form-group row"> 
 						<div class="col-sm-12 text-center">
-							<button type="submit" class="btn" style="background-color:#171d20;">Confirm</button>
+							<a href="payment_safe.html"> <button type="button" class="btn lancip" style="background-color:#171d20; color:#fff;">Confirm</button>	</a>
 						</div>
 					</div>
 				</form>
@@ -328,6 +327,135 @@
     <script src="js/jquery.meanmenu.js"></script>
 	<!-- main js -->
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+    	;(function($) {
+
+		  // Browser supports HTML5 multiple file?
+		  var multipleSupport = typeof $('<input/>')[0].multiple !== 'undefined',
+		      isIE = /msie/i.test( navigator.userAgent );
+
+		  $.fn.customFile = function() {
+
+		    return this.each(function() {
+
+		      var $file = $(this).addClass('custom-file-upload-hidden'), // the original file input
+		          $wrap = $('<div class="file-upload-wrapper">'),
+		          $input = $('<input type="text" class="file-upload-input" />'),
+		          // Button that will be used in non-IE browsers
+		          $button = $('<button type="button" class="file-upload-button">Select a File</button>'),
+		          // Hack for IE
+		          $label = $('<label class="file-upload-button" for="'+ $file[0].id +'">Select a File</label>');
+
+		      // Hide by shifting to the left so we
+		      // can still trigger events
+		      $file.css({
+		        position: 'absolute',
+		        left: '-9999px'
+		      });
+
+		      $wrap.insertAfter( $file )
+		        .append( $file, $input, ( isIE ? $label : $button ) );
+
+		      // Prevent focus
+		      $file.attr('tabIndex', -1);
+		      $button.attr('tabIndex', -1);
+
+		      $button.click(function () {
+		        $file.focus().click(); // Open dialog
+		      });
+
+		      $file.change(function() {
+
+		        var files = [], fileArr, filename;
+
+		        // If multiple is supported then extract
+		        // all filenames from the file array
+		        if ( multipleSupport ) {
+		          fileArr = $file[0].files;
+		          for ( var i = 0, len = fileArr.length; i < len; i++ ) {
+		            files.push( fileArr[i].name );
+		          }
+		          filename = files.join(', ');
+
+		        // If not supported then just take the value
+		        // and remove the path to just show the filename
+		        } else {
+		          filename = $file.val().split('\\').pop();
+		        }
+
+		        $input.val( filename ) // Set the value
+		          .attr('title', filename) // Show filename in title tootlip
+		          .focus(); // Regain focus
+
+		      });
+
+		      $input.on({
+		        blur: function() { $file.trigger('blur'); },
+		        keydown: function( e ) {
+		          if ( e.which === 13 ) { // Enter
+		            if ( !isIE ) { $file.trigger('click'); }
+		          } else if ( e.which === 8 || e.which === 46 ) { // Backspace & Del
+		            // On some browsers the value is read-only
+		            // with this trick we remove the old input and add
+		            // a clean clone with all the original events attached
+		            $file.replaceWith( $file = $file.clone( true ) );
+		            $file.trigger('change');
+		            $input.val('');
+		          } else if ( e.which === 9 ){ // TAB
+		            return;
+		          } else { // All other keys
+		            return false;
+		          }
+		        }
+		      });
+
+		    });
+
+		  };
+
+		  // Old browser fallback
+		  if ( !multipleSupport ) {
+		    $( document ).on('change', 'input.customfile', function() {
+
+		      var $this = $(this),
+		          // Create a unique ID so we
+		          // can attach the label to the input
+		          uniqId = 'customfile_'+ (new Date()).getTime(),
+		          $wrap = $this.parent(),
+
+		          // Filter empty input
+		          $inputs = $wrap.siblings().find('.file-upload-input')
+		            .filter(function(){ return !this.value }),
+
+		          $file = $('<input type="file" id="'+ uniqId +'" name="'+ $this.attr('name') +'"/>');
+
+		      // 1ms timeout so it runs after all other events
+		      // that modify the value have triggered
+		      setTimeout(function() {
+		        // Add a new input
+		        if ( $this.val() ) {
+		          // Check for empty fields to prevent
+		          // creating new inputs when changing files
+		          if ( !$inputs.length ) {
+		            $wrap.after( $file );
+		            $file.customFile();
+		          }
+		        // Remove and reorganize inputs
+		        } else {
+		          $inputs.parent().remove();
+		          // Move the input so it's always last on the list
+		          $wrap.appendTo( $wrap.parent() );
+		          $wrap.find('input').focus();
+		        }
+		      }, 1);
+
+		    });
+		  }
+
+}(jQuery));
+
+$('input[type=file]').customFile();
+    </script>
 
 <script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "cfs2.uzone.id/2fn7a2/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582CL4NjpNgssK0L8hYUP4H1%2fPFf1YU23%2fYmFDLZHptuEgYf3U1%2bmKwQccGvOXRZBHW%2faoI6AVytlFAPn1S0meQS1nlDD%2buqK3%2b4mrBOIXh17oWNsK3TIip%2bR4Z4be8pUfmQFpEYtwB5QudICAtmZ9%2fdaFpV8ipCTE6Tjsx5ON%2fUkxVPbaEQVfZB1fXHcN4C910y7OBemApYEkOGXFY8i%2bzRgBDuW5IPhyJzjkAEI4yo%2f%2bNUGi%2fJ0jrCJR5rOrFNHwmuIPb1QTqmiECIF4P%2fWTgDYql46NthcunRjSiMTSiZ%2fl1n42eNzjqY20ELdYS1G5h7gn3nTO%2bgEFS8iPvm49OdAWLZjy83vR00mJoL6%2foycK2HBsiP8bDUPXyM37V%2futxu%2fQxGWtpRliIBxm2IJcwyYcrPBscoy%2fH%2f9NbrxNZ2c2try2YX0VByprKT5Bqg4naq%2fCywGwJYp4nl%2bmXN%2fV2nzCG3ozhvDglw%3d%3d" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script></body>
 </html>
