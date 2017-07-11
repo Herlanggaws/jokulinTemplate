@@ -832,6 +832,16 @@ table tr td {
 /*-------------------------------
 [1.4 CheckPageBtn ]
 --------------------------------*/
+button.btnacc,a.btnacc{
+      background: rgb(58, 75, 96) none repeat scroll 0 0;
+    border: medium none;
+    color: rgb(255, 255, 255);
+    line-height: 20px;
+    margin-bottom: 25px;
+    padding: 10px 32.9px;
+    transition: all 0.3s ease 0s;
+}
+
 button.checkPageBtn,a.checkPageBtn {
   background: rgb(58, 75, 96) none repeat scroll 0 0;
   border: medium none;
