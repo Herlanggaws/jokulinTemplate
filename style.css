@@ -1148,7 +1148,27 @@ color:#b3b2b2;
         background-color: darken($file-upload-color, 20);
     }
 }
+.product__preview__item img {
+    width: 20%;
+    float: left;
+    margin-right: 20px;
+}
 
+@media (max-width: 980px) {
+  .image__big__wrap {
+    width: 100%;
+  }
+}
+
+  .image__big__wrap {
+    width: 60%;
+    padding: 0 20px;
+    margin: auto;
+  }
+
+    .product-detail .image__big__wrap {
+    width: 100%;
+  }
 /*========================================================================
               [ END ]
 =========================================================================*/
