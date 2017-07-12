@@ -25488,7 +25488,7 @@ Floated Menu / Item
 
 .ui.cards > .card > :last-child,
 .ui.card > :last-child {
-  border-radius: 0em 0em 0.28571429rem 0.28571429rem !important;
+  border-radius: 0em;
 }
 
 .ui.cards > .card > :only-child,
@@ -25508,12 +25508,15 @@ Floated Menu / Item
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+  height: 100%;
   padding: 0em;
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0);
 }
 
 .ui.cards > .card > .image > img,
 .ui.card > .image > img {
+  margin:  5px 0px  5px 0px;
+  padding: 0px 5px 0px 5px;
   display: block;
   width: 100%;
   height: auto;
