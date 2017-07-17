@@ -216,7 +216,7 @@ a:hover{text-decoration:none;}
 
 /*============= ScrollUp =============*/
 #scrollUp {
-  background-color: #202B30;
+  background-color: #e2750d;
   padding: 8px 10px;
   right: 25px;
   text-decoration: none;
@@ -261,7 +261,7 @@ body {
 -------------------------*/
 .social_icon li {margin-right: 8px;}
 .social_icon li a, .footer_icon li a, .shop_icon a {
-  background: rgb(57, 74, 95) none repeat scroll 0 0;
+  background: rgb(102, 49, 0) none repeat scroll 0 0;
   display: block;
   height: 25px;
   padding: 5px;
@@ -448,7 +448,7 @@ li.searchbox.searchbox-open {padding-top: 0;}
 [5. Choose-Section ]
 ===========================================*/
 .choose_area::after {
-  background:#3A4B60;
+  background:rgb(102, 49, 0);
   content: "";
   height: 100%;
   left: 0;
@@ -675,7 +675,7 @@ table tr td {
 [8.1 Footer-Top ]
 --------------------------------*/
 .footer_top {
-  background: rgb(32, 43, 48) none repeat scroll 0 0;
+  background: #ff900d none repeat scroll 0 0;
   padding: 40px 0;
 }
 .newsletter h4 {
@@ -693,7 +693,7 @@ table tr td {
   width: 75%;
 }
 .subscribe_btn {
-  background: rgb(32, 43, 48) none repeat scroll 0 0;
+  background: rgb(102, 49, 0) none repeat scroll 0 0;
   color: #ffffff !important;
   font-family: nexa_regularregular;
   font-size: 16px !important;
@@ -703,7 +703,7 @@ table tr td {
 /*-------------------------------
 [8.2 Footer-Middel ]
 --------------------------------*/
-.footer_middel {background: rgb(23, 29, 32) none repeat scroll 0 0;}
+.footer_middel {background: rgb(226, 117, 13) none repeat scroll 0 0;}
 .footer_link p {
   border-bottom: 1px solid #3A4B60;
   padding-bottom: 10px;
@@ -739,7 +739,7 @@ table tr td {
 /*-------------------------------
 [8.3 Footer-Bottom ]
 --------------------------------*/
-.footer_bottom {background: rgb(32, 43, 48) none repeat scroll 0 0;}
+.footer_bottom {background: rgb(255, 144, 13) none repeat scroll 0 0;}
 .copyright p,.copyright p a {
   color: rgb(255, 255, 255);
   font-size: 13px;
