@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
   padding:0;
 }
 h1, h2, h5, a, .header_top_right ul li a:hover,.mainmenu a:hover, .choose_text:hover.choose_text i, .choose_active.choose_text i, .choose_text:hover.choose_text h5 a, .choose_active.choose_text h5 a, .social_icon li a i, .review_icon i, .compare_menu ul li a,th, .features_text  h5, .disclaimer h5, .single_features i, .single_features i.flaticon-lightbulbs, .single_features i.flaticon-tshirt17, .disclaimer i, .newsletter input{
-  color:#3a4b60;
+  color:#663100;
 }
 .social_icon li a:hover i,.slide_btn:hover,.shop_now_btn:hover,.searchbox-open span,.choose_title h2,.choose_text h5  a,.choose_btn .shop_now_btn,.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover,.nav-tabs li a:hover,.footer_link p,#scrollUp i,.dark_product h1,.footer_link li a,.address li{
   color:#fff;
@@ -201,7 +201,7 @@ p{
   font-size:14px;
   line-height:22px;
   font-family: nexa_bookregular;
-  color:#263547;
+  color:#381b00;
   font-weight:500;
 }
 a {
@@ -242,7 +242,7 @@ body {
 /*-----------------------------------------
 [2.1 Header-Top ]
 ------------------------------------------*/
-.header_top {border-bottom: 1px solid #E3E3E3;}
+.header_top {border-bottom: 1px solid rgba(102, 49, 0, 0.31);}
 /*--------------------------------
 [2.1.1 Header-Top-Left ]
 ---------------------------------*/
@@ -271,7 +271,7 @@ body {
   color: rgb(255, 255, 255);
   font-size: 14px;
 }
-.shop_icon span,.slide_btn:hover,.shop_now_btn:hover{background:#3a4b60;}
+.shop_icon span,.slide_btn:hover,.shop_now_btn:hover{background:#663100;}
 .social_icon li a:hover i{opacity:.6;}
 /*-------------------------
 [2.1.1.2 Header-Other-Icon ]
@@ -279,7 +279,7 @@ body {
 .social_others  li a {margin-left: 10px;}
 .social_others li {margin-left:10px;}
 .social_others a,.header_top_right ul li a{
-  color: rgb(135, 135, 135);
+  color: #663100;
   font-size: 13px;
   text-transform: inherit;
 }
@@ -351,7 +351,7 @@ li.searchbox.searchbox-open {padding-top: 0;}
   line-height: 16px;
   padding: 10px 15px;
   margin-left: 5px;
-  color:rgb(135, 135, 135);
+  color:rgb(102, 49, 0);
 }
 .shop_icon span {
   font-size: 10px;
@@ -364,7 +364,7 @@ li.searchbox.searchbox-open {padding-top: 0;}
 }
 .shop_icon a {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-  border: 1px solid rgb(57, 74, 95);
+  border: 1px solid rgb(102, 49, 0);
   height: 30px;
   padding: 5px !important;
   width: 30px;
@@ -386,12 +386,12 @@ li.searchbox.searchbox-open {padding-top: 0;}
 [4.1 Left-Product ]
 --------------------------------*/
 .padding_right{padding-right: 15px;}
-.single_product {border: 15px solid rgb(237, 237, 237);}
+.single_product {border: 15px solid rgba(160, 127, 97, 0.22);}
 .product_img {padding: 50px 100px;}
 .product_img.tre_shirt_3 {padding: 70px 90px;}
 .product_img.tre_shirt_2 {padding: 90px 20px;}
 .product_text {
-  background: rgba(57, 74, 95, 0.75) none repeat scroll 0 0;
+  background: rgba(102, 49, 0, 0.62) none repeat scroll 0 0;
   padding: 40px 0;
   position: absolute;
   top: 50%;
@@ -427,7 +427,7 @@ li.searchbox.searchbox-open {padding-top: 0;}
   left:0;
 }
 .product_text_two h1 {
-  border-bottom: 2px solid #3A4B60;
+  border-bottom: 2px solid #663100;
   margin-bottom: 65px;
 }
 .product_text p {
@@ -442,7 +442,7 @@ li.searchbox.searchbox-open {padding-top: 0;}
   font-size: 16px;
   margin-top: 50px;
   padding: 10px 30px;
-  border: 2px solid #3a4b60;
+  border: 2px solid #663100;
 }
 /*==========================================
 [5. Choose-Section ]
@@ -484,7 +484,7 @@ li.searchbox.searchbox-open {padding-top: 0;}
   font-size: 50px;
 }
 .choose_text:hover,.choose_active {
-  background: rgb(255, 255, 255) none repeat scroll 0 0;
+  background: rgb(255, 144, 13) none repeat scroll 0 0;
   padding: 30px 10px 115px;
   transition: all 300ms ease-out 0s;
 }
@@ -1006,7 +1006,7 @@ color:#b3b2b2;
 
 .putih {
    
- color: #47576a !important;
+ color: #fff !important;
 }
 
 .putih:hover{
