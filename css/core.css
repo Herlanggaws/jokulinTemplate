@@ -997,7 +997,7 @@ table {
   position: relative;
 }
 .product__preview__list .product__preview__item.active:before {
-  background-color: #000;
+  background-color: #663100;
   visibility: visible;
   -webkit-transform: scaleX(1);
   -ms-transform: scaleX(1);
