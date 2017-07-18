@@ -2332,22 +2332,22 @@ input::selection {
 
 .ui.inverted.btua.buttons .button:hover,
 .ui.inverted.btua.button:hover {
-  background-color: #394a5f;
+  background-color: #ff900d;
 }
 
 .ui.inverted.btua.buttons .button:focus,
 .ui.inverted.btua.button:focus {
-  background-color: #394a5f;
+  background-color: #ffcf0d;
 }
 
 .ui.inverted.btua.buttons .active.button,
 .ui.inverted.btua.active.button {
-  background-color: #394a5f;
+  background-color: #ff900d;
 }
 
 .ui.inverted.btua.buttons .button:active,
 .ui.inverted.btua.button:active {
-  background-color: #394a5f;
+  background-color: #ff900d;
 }
 
 /* Inverted Basic */
