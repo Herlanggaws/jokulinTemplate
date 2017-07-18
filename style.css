@@ -141,7 +141,7 @@ a:focus {
   padding: 0;
 }
 .float-left{float:left;}
-.float-right{float:right;}
+.float-right{float:right;margin-top: 14px;}
 img {
   max-width: 100%;
     height: auto;
@@ -285,7 +285,7 @@ body {
 }
 .header_top_right.text-right a,.shop_icon {margin-right: 10px;}
 .social_others a i {
-  color: #3a4b60;
+  color: #663100;
   font-size: 15px;
   margin-right: 5px;
 }
@@ -369,8 +369,8 @@ li.searchbox.searchbox-open {padding-top: 0;}
   padding: 5px !important;
   width: 30px;
 }
-.mainmenu a i {top: 0;}
-.mainmenu a:hover i {top: 5px;}
+.mainmenu a i {top: 0px;right: 1px;}
+.mainmenu a:hover i {color: rgb(177, 87, 3);}
 .guarantee_text p {padding-bottom: 20px;}
 .footer_link li{margin-bottom: 20px;}
 /*==========================================
