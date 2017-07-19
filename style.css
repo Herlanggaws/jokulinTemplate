@@ -781,7 +781,7 @@ table tr td {
 [1.2 Panel-Text ]
 --------------------------------*/
 .sauget-accordion .panel-heading h4 a,.checkTitle .ct-design,.commonChack p,.commonChack label ,button.checkPageBtn,a.checkPageBtn,p.alrdyReg,.loginFrom input,.plxLogin,label{
-  color: rgb(58, 75, 96);
+  color: rgb(102, 49, 0);
   font-family: roboto;
   font-size: 14px;
   font-weight:400;
@@ -843,7 +843,7 @@ button.btnacc,a.btnacc{
 }
 
 button.checkPageBtn,a.checkPageBtn {
-  background: rgb(58, 75, 96) none repeat scroll 0 0;
+  background: rgb(102, 49, 0) none repeat scroll 0 0;
   border: medium none;
   color: rgb(255, 255, 255);
   line-height: 30px;
