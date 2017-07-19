@@ -328,11 +328,11 @@ li.searchbox.searchbox-open {padding-top: 0;}
   width:25px;
 }
 .searchbox-open {
-  border: 1px solid #3a4b60;
+  border: 1px solid #663100;
   width: 50%;
 }
 .searchbox-open span {
-  background: #3a4b60;
+  background:#663100;
   transition: width 0.3s ease 0s;
   width: 50px;
   height: 35px;
@@ -1184,6 +1184,17 @@ color:#b3b2b2;
 .navbar-default .navbar-nav>li>a{
   color: #663100;
 }
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 40px;
+  width: auto;
+  max-width: 200px;
+  margin: 20px auto;
+  text-align: center;
+}
+
 
 /*========================================================================
               [ END ]
