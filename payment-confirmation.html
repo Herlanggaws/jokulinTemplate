@@ -22,9 +22,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/responsive.css">
 
-    <!--Okieng CSS-->
-    <link rel="stylesheet" type="text/css" href="okieng.css">
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -75,7 +72,7 @@
             </div>
         </div>
     </div> <!-- End header area -->
-        
+    
     <div class="site-branding-area">
         <div class="container">
             <div class="row">
@@ -107,7 +104,7 @@
                 </div> 
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="shop.html">Shop page</a></li>
                         <li><a href="cart.html">Cart</a></li>
                         <li><a href="checkout.html">Checkout</a></li>
@@ -116,27 +113,63 @@
                 </div>  
             </div>
         </div>
-    </div> <!-- End mainmenu area --><br>
+    </div> <!-- End mainmenu area --><br/>
+
 <div class="container">
-	<div class="row">
-		<div class="col-md-12">
-			<h3>Forgot Your Password?</h3>
-				<p style= "font-size:14px;">Please enter your email address and we'll send you a link you can use to pick a new password.</p>
-				<form role="form" class="porm">
-		  		<div class="form-group row">
+		<div class="row">
+			<div class="col-md-8">
+				<h3 class="text-center">Order Confirmation</h3>
+				<br>
+				<form class="">
+					<div class="form-group row">
+						<label class="control-label col-md-4 col-sm-2">No Invoice :</label>
 						<div class="col-md-8 col-sm-10">
-							<input type="text" class="form-control" placeholder="Enter email address">
+							<span>23245373541</span>
 						</div>
 					</div>
-					<div class="wrapper">
-					<button type="submit" class="button" style="background-color: #1abc9c; color: #fff;">Reset Password</button>
+					<div class="form-group row">
+						<label class="control-label col-md-4 col-sm-2">Email:</label>
+						<div class="col-md-8 col-sm-10">
+							<input type="text" class="form-control" id="email" placeholder="Enter email">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="control-label col-md-4 col-sm-2">Total Payment:</label>
+						<div class="col-md-8 col-sm-10"> 
+							<input type="text" class="form-control" id="pwd" placeholder="Enter url">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="control-label col-md-4 col-sm-2">Bank:</label>
+						<div class="col-md-8 col-sm-10"> 
+							<select class="form-control">
+								<option value="">Select Bank</option>
+								<option value="BCA">BCA</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="control-label col-md-4 col-sm-2">Bukti Transfer:</label>
+						<div class="col-md-8 col-sm-10"> 
+							<div class="input__file__wrap d-inline-block">
+								<label style="background-color: #1abc9c; color:#fff;" class="btn btn-default btn-file">
+    							Browse <input type="file" style="display: none;">
+								</label>
+								<small class="input-text inline"></small>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="form-group row"> 
+						<div class="col-sm-12 text-center">
+							<button type="submit" class="btn">Confirm</button>
+						</div>
 					</div>
 				</form>
+			</div>
 		</div>
 	</div>
-</div>
-<br>
-		 <div class="footer-top-area">
+    <div class="footer-top-area">
         <div class="zigzag-bottom"></div>
         <div class="container">
             <div class="row">
@@ -158,11 +191,11 @@
                     <div class="footer-menu">
                         <h2 class="footer-wid-title">User Navigation </h2>
                         <ul>
-                            <li><a href="#">My account</a></li>
-                            <li><a href="#">Order history</a></li>
-                            <li><a href="#">Wishlist</a></li>
-                            <li><a href="#">Vendor contact</a></li>
-                            <li><a href="#">Front page</a></li>
+                            <li><a href="">My account</a></li>
+                            <li><a href="">Order history</a></li>
+                            <li><a href="">Wishlist</a></li>
+                            <li><a href="">Vendor contact</a></li>
+                            <li><a href="">Front page</a></li>
                         </ul>                        
                     </div>
                 </div>
@@ -171,11 +204,11 @@
                     <div class="footer-menu">
                         <h2 class="footer-wid-title">Categories</h2>
                         <ul>
-                            <li><a href="#">Mobile Phone</a></li>
-                            <li><a href="#">Home accesseries</a></li>
-                            <li><a href="#">LED TV</a></li>
-                            <li><a href="#">Computer</a></li>
-                            <li><a href="#">Gadets</a></li>
+                            <li><a href="">Mobile Phone</a></li>
+                            <li><a href="">Home accesseries</a></li>
+                            <li><a href="">LED TV</a></li>
+                            <li><a href="">Computer</a></li>
+                            <li><a href="">Gadets</a></li>
                         </ul>                        
                     </div>
                 </div>
@@ -185,17 +218,14 @@
                         <h2 class="footer-wid-title">Newsletter</h2>
                         <p>Sign up to our newsletter and get exclusive deals you wont find anywhere else straight to your inbox!</p>
                         <div class="newsletter-form">
-                            <form action="#">
-                                <input type="email" placeholder="Type your email">
-                                <input type="submit" value="Subscribe">
-                            </form>
+                            <input type="email" placeholder="Type your email">
+                            <input type="submit" value="Subscribe">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> <!-- End footer top area -->
-    
+    </div>
     <div class="footer-bottom-area">
         <div class="container">
             <div class="row">
@@ -215,7 +245,7 @@
                 </div>
             </div>
         </div>
-    </div> <!-- End footer bottom area -->
+    </div>
    
     <!-- Latest jQuery form server -->
     <script src="https://code.jquery.com/jquery.min.js"></script>
