@@ -41,7 +41,7 @@
                             <li><a href="#"><i class="fa fa-heart"></i> Wishlist</a></li>
                             <li><a href="cart.html"><i class="fa fa-user"></i> My Cart</a></li>
                             <li><a href="checkout.html"><i class="fa fa-user"></i> Checkout</a></li>
-                            <li><a href="#"><i class="fa fa-user"></i> Login</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-user"></i> Login</a></li>
                         </ul>
                     </div>
                 </div>
@@ -90,6 +90,89 @@
             </div>
         </div>
     </div> <!-- End site branding area -->
+    <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+    
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Register / Login</h4>
+                        </div>
+                       <div class="modal-body">
+                                                <div class="row">
+                                                   <div class="col-md-12">  
+                                                     <form>
+                                                     <div class="row">
+                                                      <div class="form-group text-kiri col-md-12">
+                                                        <label for="exampleInputEmail1">Name</label>
+                                                        <input type="text" class="form-control lancip" placeholder="First Name">
+                                                      </div>
+                                                      </div>
+                                                     <div class="row">
+                                                      <div class="form-group text-kiri col-md-12">
+                                                        <label for="exampleInputEmail1">Name</label>
+                                                        <input type="text" class="form-control lancip" placeholder="Last Name">
+                                                      </div>
+                                                     </div> 
+                                                      <div class="row">
+                                                      <div class="form-group text-kiri col-md-12">
+                                                        <label for="exampleInputEmail1">Email</label>
+                                                        <input placeholder="email" type="Email" class="form-control lancip" >
+                                                      </div>
+                                                     </div> 
+                                                      <div class="row">
+                                                      <div class="form-group text-kiri col-md-12">
+                                                        <label for="exampleInputEmail1">Password</label>
+                                                        <input placeholder="password" type="password" class="form-control lancip" >
+                                                      </div>
+                                                     </div>
+                                                     <p>Already have an account? <a data-toggle="modal" href="#myModal2">Login</p></a>
+                                                     <a href="payment.html"> <button type="submit" class="pull-left">Register</button></a>
+                                                     </form>
+                                                  </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal" id="myModal2" data-backdrop="static">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content lancip" style="width: 422px;margin:95px 0px 0px 79px">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                                    ×</button>
+                                                <h4 style="text-align: left;">
+                                                    Login</h4>
+                                            </div>
+                                            <div class="container">
+                                            </div>
+                                            <div class="modal-body">
+                                               <div class="row">
+                                                   <div class="col-md-12">  
+                                                     <form>
+                                                      <div class="row">
+                                                      <div class="form-group text-kiri col-md-12">
+                                                        <label for="exampleInputEmail1">Email</label>
+                                                        <input placeholder="email" type="Email" class="form-control lancip" >
+                                                      </div>
+                                                     </div> 
+                                                      <div class="row">
+                                                      <div class="form-group text-kiri col-md-12">
+                                                        <label for="exampleInputEmail1">Password</label>
+                                                        <input placeholder="password" type="password" class="form-control lancip" >
+                                                      </div>
+                                                     </div>
+                                                     <a href="payment.html"> <button type="submit" class="pull-left">Login</button></a>
+                                                     </form>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                             </div>
+
     
     <div class="mainmenu-area">
         <div class="container">
@@ -238,7 +321,7 @@
                                                     <input type="submit" value="Apply Coupon" name="apply_coupon" class="button">
                                                 </div>
                                                 <input type="submit" value="Update Cart" name="update_cart" class="button">
-                                                <input type="submit" value="Proceed to Checkout" name="proceed" class="checkout-button button alt wc-forward">
+                                                <a href="checkout.html"><button type="submit">Proceed To Checkout</button></a>
                                             </td>
                                         </tr>
                                     </tbody>
