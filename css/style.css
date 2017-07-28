@@ -1,9 +1,7 @@
-/*
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
-*/
+.lancip{
+	border-radius: 0px;
+}
+
 h4, h5, h6,
 h1, h2, h3 {margin-top: 0;} 
 ul, ol {margin: 0;}
@@ -2560,7 +2558,7 @@ p.cart a {
 	display: inline-block;
 	font-size: 1em;
 	padding: 12px 25px;
-	background:#ff6978;
+	background:#37475a;
 	color: #fff;
 	text-transform: uppercase;
 	-webkit-transition: all 0.3s ease-in-out;
