@@ -1262,7 +1262,7 @@ ul.grid_2 li {
 }
 ul.grid_2 li:hover {
   background: #e9e9e9;
-  color: #ff6978;
+  color: #f3a847;
 }
 ul.grid_2 li h5:hover {
   color: #f3a847;
@@ -1588,7 +1588,7 @@ list-style: none;
 }
 /* checked state */
 .sky-form .radio input + i:after {
-	background-color: #ff6978;	
+	background-color: #f3a847;	
 }
 .sky-form .checkbox input + i:after {
 	color: #2da5da;
@@ -2262,7 +2262,7 @@ label {
 	color: #ffffff;
 	text-transform: capitalize;
 	display: inline-block;
-	background:#ff6978;
+	background:#f3a847;
 	padding: 10px 20px;
 	transition: 0.5s ease;
 	-moz-transition: 0.5s ease;
@@ -2312,8 +2312,9 @@ label {
 	margin-right: 5px;
 }
 .shoping_bag h4 span{
-	color:#ff6978;
-}
+	color:{
+		#f3a847;
+	}
 .s_art {
 	float: right;
 	padding: 0;
@@ -2466,7 +2467,7 @@ ul.s_icons{
 	padding: 10px 20px;
 	font-size: 1.2em;
 	color: #ffffff;
-	background:#ff6978;
+	background:#f3a847;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -2480,7 +2481,7 @@ ul.s_icons{
 	color: #00405d;
 }
 h4.title {
-  color: #ff6978;
+  color: #f3a847;
   margin-bottom: 0.5em;
   font-size: 1.6em;
   line-height: 1.2em;
@@ -2495,7 +2496,7 @@ p.cart {
 }
 p.cart a {
   text-decoration: underline;
-  color: #ff6978;
+  color: #f3a847;
 }
 .check-out {
   padding: 6em 0;
