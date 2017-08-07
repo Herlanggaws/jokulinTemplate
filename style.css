@@ -448,10 +448,22 @@ li.searchbox.searchbox-open {padding-top: 0;}
 [5. Choose-Section ]
 ===========================================*/
 .choose_area::after {
+  background:rgb(102, 49, 0);
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.choose_area_brosur::after {
   background:#fff;
   content: "";
   height: 100%;
   left: 0;
+  opacity: 100;
   position: absolute;
   top: 0;
   width: 100%;
