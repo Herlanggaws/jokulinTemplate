@@ -5,6 +5,7 @@ body{
 nav ul a,
 nav .brand-logo {
   color: #171035;
+  font-weight: bold;
 }
 
 p {
@@ -144,3 +145,4 @@ p.description_content{
 #back-to-top.show {
     opacity: 1;
 }
+
