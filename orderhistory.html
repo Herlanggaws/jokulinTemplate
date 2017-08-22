@@ -41,7 +41,6 @@
 </head>
 
 <body>
-
     <!-- *** TOPBAR ***
  _________________________________________________________ -->
     <div id="top">
@@ -407,100 +406,175 @@
         <div id="content">
             <div class="container">
 
-                <div class="col-sm-12">
-                    <ul class="breadcrumb">
+                <div class="col-md-12">
 
+                    <ul class="breadcrumb">
                         <li><a href="index.html">Home</a>
                         </li>
-                        <li>Blog listing</li>
+                        <li>My wishlist</li>
                     </ul>
+
                 </div>
 
-                <!-- *** LEFT COLUMN ***
-		     _________________________________________________________ -->
+                <div class="col-md-3">
+                    <!-- *** CUSTOMER MENU ***
+ _________________________________________________________ -->
+                    <div class="panel panel-default sidebar-menu">
 
-                <div class="col-sm-9" id="blog-listing">
+                        <div class="panel-body">
+
+                            <ul class="nav nav-pills nav-stacked">
+                                <li >
+                                    <a href="myaccount.html"><i class="fa fa-list"></i> My Account</a>
+                                </li>
+                                <li class="active">
+                                    <a href="orderhistory.html"><i class="fa fa-heart"></i> Order History</a>
+                                </li>
+                                <li>
+                                    <a href="savedaddress.html"><i class="fa fa-user"></i> Saved Address</a>
+                                </li>
+                                <li>
+                                    <a href="index.html"><i class="fa fa-sign-out"></i> Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- /.col-md-3 -->
+
+                    <!-- *** CUSTOMER MENU END *** -->
+                </div>
+
+                <div class="col-md-9" id="wishlist">
 
 
                     <div class="box">
-
-                        <h1>About Us!</h1>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
-
-                    </div>
-
-                    <div class="post">
-                        <h2><a href="post.html">Fashion now</a></h2>
-                        <p class="author-category">By <a href="#">John Slim</a> in <a href="">Fashion and style</a>
-                        </p>
-                        <hr>
-                        <p class="date-comments">
-                            <a href="post.html"><i class="fa fa-calendar-o"></i> June 20, 2013</a>
-                            
-                        </p>
-                        <div class="image">
-                            <a href="post.html">
-                                <img src="img/blog2.jpg" class="img-responsive" alt="Example blog post alt">
-                            </a>
-                        </div>
-                        <p class="intro">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies
-                            mi vitae est. Mauris placerat eleifend leo.</p>
-                        <p class="read-more"><a href="post.html" class="btn btn-primary">Continue reading</a>
-                        </p>
-                    </div>
-
-
-                    <div class="post">
-                        <h2><a href="post.html">Who is who - example blog post</a></h2>
-                        <p class="author-category">By <a href="#">John Slim</a> in <a href="">About Minimal</a>
-                        </p>
-                        <hr>
-                        <p class="date-comments">
-                            <a href="post.html"><i class="fa fa-calendar-o"></i> June 20, 2013</a>
-                            
-                        </p>
-                        <div class="image">
-                            <a href="post.html">
-                                <img src="img/blog.jpg" class="img-responsive" alt="Example blog post alt">
-                            </a>
-                        </div>
-                        <p class="intro">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies
-                            mi vitae est. Mauris placerat eleifend leo.</p>
-                        <p class="read-more"><a href="post.html" class="btn btn-primary">Continue reading</a>
-                        </p>
-                    </div>
-
-                    <ul class="pager">
-                        <li class="previous"><a href="#">&larr; Older</a>
-                        </li>
-                        <li class="next disabled"><a href="#">Newer &rarr;</a>
-                        </li>
-                    </ul>
-
-
+                       <h2>Order History</h2>
+                <table cellpadding="0" cellspacing="0" width="100%" class="table table-striped">
+                    <tbody>
+                        <tr id="cart_th">
+                            <th class="">Transaction No</th>
+                            <th class="">Date</th>
+                            <th class="">Status</th>
+                            <th class="">Detail</th>
+                        </tr>
+                        
+                          <tr>
+                            <td>67201753466</td>
+                            <td>2017-07-07</td>
+                            <td>Waiting for payment verification</td>
+                            <td>
+                              <a href="orderdetail.html">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                              </a>
+                            </td>
+                          </tr>
+                        
+                          <tr>
+                            <td>67201772463</td>
+                            <td>2017-07-06</td>
+                            <td>Waiting for payment verification</td>
+                            <td>
+                              <a href="/customer/order_detail/67201772463">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                              </a>
+                            </td>
+                          </tr>
+                        
+                          <tr>
+                            <td>67201784462</td>
+                            <td>2017-07-06</td>
+                            <td>Rejected</td>
+                            <td>
+                              <a href="/customer/order_detail/67201784462">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                              </a>
+                            </td>
+                          </tr>
+                        
+                          <tr>
+                            <td>67201747461</td>
+                            <td>2017-07-06</td>
+                            <td>Waiting for payment verification</td>
+                            <td>
+                              <a href="/customer/order_detail/67201747461">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                              </a>
+                            </td>
+                          </tr>
+                        
+                          <tr>
+                            <td>67201758460</td>
+                            <td>2017-07-06</td>
+                            <td>Rejected</td>
+                            <td>
+                              <a href="/customer/order_detail/67201758460">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                              </a>
+                            </td>
+                          </tr>
+                        
+                          <tr>
+                            <td>67201784458</td>
+                            <td>2017-07-06</td>
+                            <td>Rejected</td>
+                            <td>
+                              <a href="/customer/order_detail/67201784458">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                              </a>
+                            </td>
+                          </tr>
+                        
+                          <tr>
+                            <td>67201753457</td>
+                            <td>2017-07-06</td>
+                            <td>Rejected</td>
+                            <td>
+                              <a href="/customer/order_detail/67201753457">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                              </a>
+                            </td>
+                          </tr>
+                        
+                          <tr>
+                            <td>6720175456</td>
+                            <td>2017-07-06</td>
+                            <td>Rejected</td>
+                            <td>
+                              <a href="/customer/order_detail/6720175456">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                              </a>
+                            </td>
+                          </tr>
+                        
+                          <tr>
+                            <td>37201769431</td>
+                            <td>2017-07-03</td>
+                            <td>Rejected</td>
+                            <td>
+                              <a href="/customer/order_detail/37201769431">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                              </a>
+                            </td>
+                          </tr>
+                        
+                          <tr>
+                            <td>37201723430</td>
+                            <td>2017-07-03</td>
+                            <td>Rejected</td>
+                            <td>
+                              <a href="/customer/order_detail/37201723430">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                              </a>
+                            </td>
+                          </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+                      </div>
 
                 </div>
-                <!-- /.col-md-9 -->
-
-                <!-- *** LEFT COLUMN END *** -->
-
-
-                <div class="col-md-3">
-                    <!-- *** BLOG MENU ***
- _________________________________________________________ -->
-
-                    <!-- /.col-md-3 -->
-
-                    <!-- *** BLOG MENU END *** -->
-
-                    <div class="banner">
-                        <a href="#">
-                            <img src="img/banner.jpg" alt="sales 2014" class="img-responsive">
-                        </a>
-                    </div>
-                </div>
-
-
             </div>
             <!-- /.container -->
         </div>
@@ -681,9 +755,6 @@
     <script src="js/bootstrap-hover-dropdown.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/front.js"></script>
-
-
-
 
 
 

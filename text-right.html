@@ -41,7 +41,6 @@
 </head>
 
 <body>
-
     <!-- *** TOPBAR ***
  _________________________________________________________ -->
     <div id="top">
@@ -407,91 +406,103 @@
         <div id="content">
             <div class="container">
 
-                <div class="col-sm-12">
+                <div class="col-md-12">
                     <ul class="breadcrumb">
-
-                        <li><a href="index.html">Home</a>
+                        <li><a href="#">Home</a>
                         </li>
-                        <li>Blog listing</li>
+                        <li>Text page</li>
                     </ul>
                 </div>
 
-                <!-- *** LEFT COLUMN ***
-		     _________________________________________________________ -->
+                <div class="col-md-9">
 
-                <div class="col-sm-9" id="blog-listing">
+                    <div class="box" id="text-page">
+                        <h1>Text formatting - Header level 1</h1>
 
+                        <p class="lead">This page aim is to show you the most common HTML elements appearance on the website. For further reference please visit official <a href="http://getbootstrap.com/css/" class="external">Bootstrap website</a>.</p>
 
-                    <div class="box">
+                        <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris
+                            placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum
+                            rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
 
-                        <h1>About Us!</h1>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+                        <h2>Header Level 2</h2>
 
-                    </div>
+                        <ol>
+                            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                            <li>Aliquam tincidunt mauris eu risus.</li>
+                        </ol>
 
-                    <div class="post">
-                        <h2><a href="post.html">Fashion now</a></h2>
-                        <p class="author-category">By <a href="#">John Slim</a> in <a href="">Fashion and style</a>
-                        </p>
+                        <blockquote>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada
+                                tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
+                        </blockquote>
+
+                        <h3>Header Level 3</h3>
+
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                            <li>Aliquam tincidunt mauris eu risus.</li>
+                        </ul>
+
                         <hr>
-                        <p class="date-comments">
-                            <a href="post.html"><i class="fa fa-calendar-o"></i> June 20, 2013</a>
-                            
-                        </p>
-                        <div class="image">
-                            <a href="post.html">
-                                <img src="img/blog2.jpg" class="img-responsive" alt="Example blog post alt">
-                            </a>
+
+                        <h2>Images</h2>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p class="text-center">
+                                    <img src="img/detailsquare.jpg" class="img-circle img-responsive" alt="">
+                                </p>
+                                <p class="text-center">circle</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="text-center">
+                                    <img src="img/detailsquare.jpg" class="img-thumbnail  img-responsive" alt="">
+                                </p>
+                                <p class="text-center">thumbnail</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="text-center">
+                                    <img src="img/detailsquare.jpg" class="img-rounded img-responsive" alt="">
+                                </p>
+                                <p class="text-center">rounded</p>
+                            </div>
                         </div>
-                        <p class="intro">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies
-                            mi vitae est. Mauris placerat eleifend leo.</p>
-                        <p class="read-more"><a href="post.html" class="btn btn-primary">Continue reading</a>
-                        </p>
+
                     </div>
-
-
-                    <div class="post">
-                        <h2><a href="post.html">Who is who - example blog post</a></h2>
-                        <p class="author-category">By <a href="#">John Slim</a> in <a href="">About Minimal</a>
-                        </p>
-                        <hr>
-                        <p class="date-comments">
-                            <a href="post.html"><i class="fa fa-calendar-o"></i> June 20, 2013</a>
-                            
-                        </p>
-                        <div class="image">
-                            <a href="post.html">
-                                <img src="img/blog.jpg" class="img-responsive" alt="Example blog post alt">
-                            </a>
-                        </div>
-                        <p class="intro">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies
-                            mi vitae est. Mauris placerat eleifend leo.</p>
-                        <p class="read-more"><a href="post.html" class="btn btn-primary">Continue reading</a>
-                        </p>
-                    </div>
-
-                    <ul class="pager">
-                        <li class="previous"><a href="#">&larr; Older</a>
-                        </li>
-                        <li class="next disabled"><a href="#">Newer &rarr;</a>
-                        </li>
-                    </ul>
-
 
 
                 </div>
                 <!-- /.col-md-9 -->
 
-                <!-- *** LEFT COLUMN END *** -->
-
-
                 <div class="col-md-3">
-                    <!-- *** BLOG MENU ***
+                    <!-- *** PAGES MENU ***
  _________________________________________________________ -->
+                    <div class="panel panel-default sidebar-menu">
 
-                    <!-- /.col-md-3 -->
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Pages</h3>
+                        </div>
 
-                    <!-- *** BLOG MENU END *** -->
+                        <div class="panel-body">
+                            <ul class="nav nav-pills nav-stacked">
+                                <li>
+                                    <a href="text.html">Text page</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact page</a>
+                                </li>
+                                <li>
+                                    <a href="faq.html">FAQ</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <!-- *** PAGES MENU END *** -->
+
 
                     <div class="banner">
                         <a href="#">
@@ -499,7 +510,6 @@
                         </a>
                     </div>
                 </div>
-
 
             </div>
             <!-- /.container -->
