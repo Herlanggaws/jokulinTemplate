@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Free Snow Bootstrap Website Template | Team :: w3layouts</title>
+<title>Free Snow Bootstrap Website Template | Home :: w3layouts</title>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -15,6 +15,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <script src="js/jquery.min.js"></script>
+<!--<script src="js/jquery.easydropdown.js"></script>-->
+<!--start slider -->
+<link rel="stylesheet" href="css/fwslider.css" media="all">
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/fwslider.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--end slider -->
 <script type="text/javascript">
         $(document).ready(function() {
             $(".dropdown img.flag").addClass("flagvisibility");
@@ -46,24 +53,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             });
         });
      </script>
-     <!-- Add fancyBox main JS and CSS files -->
-	<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
-	<link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
-		<script>
-			$(document).ready(function() {
-				$('.popup-with-zoom-anim').magnificPopup({
-					type: 'inline',
-					fixedContentPos: false,
-					fixedBgPos: true,
-					overflowY: 'auto',
-					closeBtnInside: true,
-					preloader: false,
-					midClick: true,
-					removalDelay: 300,
-					mainClass: 'my-mfp-zoom-in'
-			});
-		});
-		</script>
 </head>
 <body>
 	<div class="header">
@@ -78,7 +67,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
 						    <ul class="nav" id="nav">
 						    	<li><a href="shop.html">Shop</a></li>
-						    	<li class="current"><a href="team.html">Team</a></li>
+						    	<li><a href="team.html">Team</a></li>
 						    	<li><a href="experiance.html">Events</a></li>
 						    	<li><a href="experiance.html">Experiance</a></li>
 						    	<li><a href="shop.html">Company</a></li>
@@ -91,7 +80,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	    	    </div>
 	            <div class="header_right">
 	    		  <!-- start search-->
-				  <div class="search-box">
+				      <div class="search-box">
 							<div id="sb-search" class="sb-search">
 								<form>
 									<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
@@ -106,7 +95,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<script>
 							new UISearch( document.getElementById( 'sb-search' ) );
 						</script>
-				   <ul class="icon1 sub-icon1 profile_img">
+						<!----//search-scripts---->
+				    <ul class="icon1 sub-icon1 profile_img">
 					 <li><a class="active-icon c1" href="#"> </a>
 						<ul class="sub-icon1 list">
 						  <div class="product_control_buttons">
@@ -126,88 +116,93 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</ul>
 					 </li>
 				   </ul>
-		        <div class="clear"></div>
+		           <div class="clear"></div>
 	       </div>
 	      </div>
 		 </div>
 	    </div>
-	  </div>
-     <div class="main">
-      <div class="shop_top">
-		<div class="container">
-			<div class="row team_box">
-				<h3 class="m_2">Our Team</h3>
-				<div class="col-md-3 team1">
-				  <a class="popup-with-zoom-anim" href="#small-dialog3"><img src="images/team1.jpg" class="img-responsive" title="continue" alt=""/></a>
-				    <div id="small-dialog3" class="mfp-hide">
-					   <div class="pop_up2">
-					   	 <h2>Lorem ipsum </h2>
-						 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie.</p>
-						 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie.</p>
-					   </div>
+	</div>
+	<div class="container">
+					<div class="alert alert-dismissable alert-success" contenteditable="true">
+      					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+							<h4 style="text-align: center" class="orders">ORDER SUCCESS</h4>
 					</div>
-					<h4 class="m_5"><a href="#">Lorem Ipsum is simply dummy</a></h4>
-				    <p class="m_6">sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
-				</div>
-				<div class="col-md-3 team1">
-					<a class="popup-with-zoom-anim" href="#small-dialog3"><img src="images/team2.jpg" class="img-responsive" title="continue" alt=""/></a>
-				    <div id="small-dialog3" class="mfp-hide">
-					   <div class="pop_up2">
-					   	 <h2>Lorem ipsum </h2>
-						 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie.</p>
-						 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie.</p>
-					   </div>
+				</div>	
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">	
+
+			<form enctype="multipart/form-data" action="/payments/461/payment_save" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="yVM8X2J5EK0RIWUkLLf6+wIsYvvcMqcebwLmjSLiml+CXZnZaftXtIjqhq9bos1tlegc4pqz8Sdw+fWKC9GoDw==">
+					<div class="form-group row">
+						<label class="control-label col-md-4 col-sm-2">No Invoice :</label>
+						<div class="col-md-8 col-sm-10">
+							<span style="color:#171d20;" >67201747461</span>
+						</div>
 					</div>
-					<h4 class="m_5"><a href="#">Lorem Ipsum is simply dummy</a></h4>
-				    <p class="m_6">sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
-				</div>
-				<div class="col-md-3 team1">
-					<a class="popup-with-zoom-anim" href="#small-dialog3"><img src="images/team3.jpg" class="img-responsive" title="continue" alt=""/></a>
-				    <div id="small-dialog3" class="mfp-hide">
-					   <div class="pop_up2">
-					   	 <h2>Lorem ipsum </h2>
-						 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie.</p>
-						 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie.</p>
-					   </div>
+					<div class="form-group row">
+						<label class="control-label col-md-4 col-sm-2">Total Payment :</label>
+						<div class="col-md-8 col-sm-10">
+							<span style="color:#171d20;">Rp.  150.000</span>
+						</div>
 					</div>
-					<h4 class="m_5"><a href="#">Lorem Ipsum is simply dummy</a></h4>
-				    <p class="m_6">sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
-				</div>
-				<div class="col-md-3 team1">
-					<a class="popup-with-zoom-anim" href="#small-dialog3"><img src="images/team4.jpg" class="img-responsive" title="continue" alt=""/></a>
-				    <div id="small-dialog3" class="mfp-hide">
-					   <div class="pop_up2">
-					   	 <h2>Lorem ipsum </h2>
-						 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie.</p>
-						 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie.</p>
-					   </div>
+					<div class="form-group row">
+						<label class="control-label col-md-4 col-sm-2">Your Bank Name:</label>
+						<div class="col-md-8 col-sm-10">
+							<input class="form-control lancip" placeholder="Example : BCA, BNI, Mandiri" type="text" name="merchant_payment[your_bank_name]" id="merchant_payment_your_bank_name">
+						</div>
 					</div>
-					<h4 class="m_5"><a href="#">Lorem Ipsum is simply dummy</a></h4>
-				    <p class="m_6">sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 team_bottom">
-				  <ul class="team_list">
-					<h4>Advantages</h4>
-		            <li><a href="#">Always free from repetition</a><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p></li>
-		            <li><a href="#">Always free from repetition</a><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p></li>
-		            <li><a href="#">Always free from repetition</a><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p></li>
-		            <li><a href="#">Always free from repetition</a><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p></li>
-		          </ul>
-				</div>
-				<div class="col-md-8">
-					<ul class="team_list">
-					 <h4>Vision Statement</h4>
-					 <p class="m_7">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-		             <img src="images/team5.jpg" class="img-responsive" alt=""/>
-		          </ul>
-				</div>
-			</div>
+					<div class="form-group row">
+						<label class="control-label col-md-4 col-sm-2">Your Bank Account Name:</label>
+						<div class="col-md-8 col-sm-10"> 
+							<input class="form-control lancip" placeholder="Your Name" type="text" name="merchant_payment[your_bank_account_name]" id="merchant_payment_your_bank_account_name">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="control-label col-md-4 col-sm-2">Destination Bank:</label>
+						<div class="col-md-8 col-sm-10"> 
+						    <select class="form-control lancip" name="merchant_payment[merchant_bank_id]" id="merchant_payment_merchant_bank_id">
+						      <option value="">Select Bank</option>
+                              
+                              <option value="3">BCA</option>
+                              
+                            </select>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="control-label col-md-4 col-sm-2">Total Payment:</label>
+						<div class="col-md-8 col-sm-10">
+							<input class="form-control numericOnly lancip" maxlength="9" size="9" type="tel" name="merchant_payment[total]" id="merchant_payment_total">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="control-label col-md-4 col-sm-2">Phone Number:</label>
+						<div class="col-md-8 col-sm-10">
+							<input class="form-control numericOnly lancip" type="tel" name="merchant_payment[phone_number]" id="merchant_payment_phone_number">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="control-label col-md-4 col-sm-2">Transfer Date:</label>
+						<div class="col-md-8 col-sm-10">
+							<input class="form-control lancip" type="text" id="datepicker">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="control-label col-md-4 col-sm-2">Notes:</label>
+						<div class="col-md-8 col-sm-10">
+							<textarea class="form-control lancip" name="merchant_payment[note] lancip" id="merchant_payment_note"></textarea>
+						</div>
+					</div>
+					<hr>
+					<div class="form-group row"> 
+						<div class="col-sm-12 text-center">
+							<a href="payment_safe.html"> <button type="button" class="btn lancip pull-right" style="background-color:#663100; color:#fff;">Confirm</button></a>
+						</div>
+					</div>
+				</form>
 		</div>
-	   </div>
-	  </div>
-	  <div class="footer">
+	</div>
+</div>
+		<div class="footer">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3">
