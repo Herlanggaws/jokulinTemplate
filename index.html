@@ -55,14 +55,18 @@
 								<li><a href="#">Account</a></li>
 								<li><a href="#">Wishlist</a></li>
 								<li><a data-toggle="modal" data-target="#myModal" href=" ">Register / Login</a></li>
-										<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="bebas">
-										  <div class="modal-dialog" role="document">
-										    <div class="modal-content lancip">
-										      <div class="modal-header">
-										        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-										        <h4 class="modal-title" id="myModalLabel" style="color:#171d20; margin-right:30%;">Register Account</h4>
-										      </div>
-										      <div class="modal-body">
+										<div class="modal" id="myModal">
+						            <div class="modal-dialog">
+						                <div class="modal-content lancip">
+						                    <div class="modal-header">
+						                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						                            ×</button>
+						                        <h4 style="color:#171c22;text-align: left;">
+						                            Register</h4>
+						                    </div>
+						                    <div class="container">
+						                    </div>
+						                    <div class="modal-body">
 										      	<div class="row">
 										      	   <div class="col-md-12">	
 											         <form>
@@ -81,24 +85,59 @@
 													  <div class="row">
 													  <div class="form-group text-kiri col-md-12">
 													    <label for="exampleInputEmail1">Email</label>
-													    <input type="Email" class="form-control lancip" >
+													    <input placeholder="email" type="Email" class="form-control lancip" >
 													  </div>
 													 </div> 
 													  <div class="row">
 													  <div class="form-group text-kiri col-md-12">
 													    <label for="exampleInputEmail1">Password</label>
-													    <input type="password" class="form-control lancip" >
+													    <input placeholder="password" type="password" class="form-control lancip" >
 													  </div>
 													 </div>
-													 <a href="payment.html"> <button type="button" class="btn lancip" style="background-color:#171d20; color:#fff;">Register</button></a>
-													 <p class="pull-left">Already have an account? <a href="#second-popup" class="second-popup-link">Login</p></a>
+													 <a href="payment.html"> <button type="button" class="btn lancip" style="background-color:#171c22; color:#fff;">Register</button></a>
+													 <p class="pull-left">Already have an account? <a data-toggle="modal" href="#myModal2">Login</p></a>
 													 </form>
 												  </div>
 												</div>
-										      </div>
-										     </div>
-										    </div>
-										   </div>
+						                </div>
+						            </div>
+						        </div>
+						        <div class="modal" id="myModal2" data-backdrop="static">
+						            <div class="modal-dialog">
+						                <div class="modal-content lancip" style="width: 422px;margin:95px 0px 0px 79px">
+						                    <div class="modal-header">
+						                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						                            ×</button>
+						                        <h4 style="color:#171c22;text-align: left;">
+						                            Login</h4>
+						                    </div>
+						                    <div class="container">
+						                    </div>
+						                    <div class="modal-body">
+						                       <div class="row">
+										      	   <div class="col-md-12">	
+											         <form>
+													  <div class="row">
+													  <div class="form-group text-kiri col-md-12">
+													    <label for="exampleInputEmail1">Email</label>
+													    <input placeholder="email" type="Email" class="form-control lancip" >
+													  </div>
+													 </div> 
+													  <div class="row">
+													  <div class="form-group text-kiri col-md-12">
+													    <label for="exampleInputEmail1">Password</label>
+													    <input placeholder="password" type="password" class="form-control lancip" >
+													  </div>
+													 </div>
+													 <a href="payment.html"> <button type="button" class="btn lancip" style="background-color:#171c22; color:#fff;">Login</button></a>
+													 </form>
+												  </div>
+												</div>
+						                    </div>
+						                </div>
+						            </div>
+						        </div>
+							 </div>
 								<li class="searchbox">
 									<input type="search" placeholder="Search......" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
 									<input type="submit" class="searchbox-submit" value="">
