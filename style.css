@@ -1072,6 +1072,10 @@ color:#b3b2b2;
 /*responsive bro */
 
 @media (min-width: 768px) {
+  .choose_text{
+    width: 40% !important;
+  }
+
   .product {
     margin: 0px 0px 20px 87px;   
 }
@@ -1205,6 +1209,7 @@ color:#b3b2b2;
   margin: 20px auto;
   text-align: center;
 }
+
 
 
 /*========================================================================
